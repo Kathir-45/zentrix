@@ -29,17 +29,9 @@ export default function Footer() {
     <footer className={styles.footer} role="contentinfo">
       <div className={`container ${styles.inner}`}>
         <div className={styles.brand}>
-          <a href="#" className={styles.logo} aria-label="Zentrix home">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="8" fill="url(#flogo)" />
-              <path d="M9 22V10l7 12 7-12v12" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-              <defs>
-                <linearGradient id="flogo" x1="0" y1="0" x2="32" y2="32">
-                  <stop stopColor="#3b82f6" /><stop offset="1" stopColor="#6366f1" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span className={styles.logoText}>Zentrix</span>
+          <a href="#" className={styles.logo} aria-label="InfiniDev home">
+            <img src="/logo-main.png" alt="InfiniDev" width="48" height="48" style={{ borderRadius: 6 }} />
+            <span className={styles.logoText}>InfiniDev</span>
           </a>
           <p className={styles.brandDesc}>
             Full-service digital agency helping businesses thrive in the digital
@@ -47,7 +39,7 @@ export default function Footer() {
           </p>
           <div className={styles.socials}>
             {["Twitter", "LinkedIn", "GitHub", "Dribbble"].map((s) => (
-              <a key={s} href="#" className={styles.socialIcon} aria-label={`Zentrix on ${s}`}>
+              <a key={s} href="#" className={styles.socialIcon} aria-label={`InfiniDev on ${s}`}>
                 {s[0]}
               </a>
             ))}
@@ -74,7 +66,7 @@ export default function Footer() {
         <div className="container">
           <div className={styles.bottomInner}>
             <p className={styles.copyright}>
-              &copy; {new Date().getFullYear()} Zentrix. All rights reserved.
+              &copy; {new Date().getFullYear()} InfiniDev. All rights reserved.
             </p>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

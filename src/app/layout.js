@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Zentrix — Digital Agency | Web, App & Design Services",
+  title: "InfiniDev — Digital Agency | Web, App & Design Services",
   description:
-    "Zentrix is a full-service digital agency offering web development, ecommerce, app development, video editing, and graphic design. Trusted by 200+ businesses worldwide.",
+    "InfiniDev is a full-service digital agency offering web development, ecommerce, app development, video editing, and graphic design. Trusted by 200+ businesses worldwide.",
   keywords: [
     "digital agency",
     "web development",
@@ -19,18 +19,18 @@ export const metadata = {
     "graphic design",
     "video editing",
   ],
-  authors: [{ name: "Zentrix" }],
+  authors: [{ name: "InfiniDev" }],
   openGraph: {
-    title: "Zentrix — Digital Agency | Web, App & Design Services",
+    title: "InfiniDev — Digital Agency | Web, App & Design Services",
     description:
       "Full-service digital agency trusted by 200+ businesses. Web development, ecommerce, app development, video editing & graphic design.",
     type: "website",
     locale: "en_US",
-    siteName: "Zentrix",
+    siteName: "InfiniDev",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zentrix — Digital Agency",
+    title: "InfiniDev — Digital Agency",
     description:
       "Full-service digital agency trusted by 200+ businesses worldwide.",
   },
@@ -46,19 +46,19 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Zentrix",
+              name: "InfiniDev",
               description:
                 "Full-service digital agency offering web, app, ecommerce, design & video services.",
-              url: "https://nexora.agency",
-              logo: "https://nexora.agency/logo.png",
+              url: "https://infinidev.agency",
+              logo: "https://infinidev.agency/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+1-555-NEXORA",
+                telephone: "+1-555-INFINIDEV",
                 contactType: "sales",
               },
               sameAs: [
-                "https://twitter.com/nexora",
-                "https://linkedin.com/company/nexora",
+                "https://twitter.com/infinidev",
+                "https://linkedin.com/company/infinidev",
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} suppressHydrationWarning>{children}</body>
     </html>
   );
 }

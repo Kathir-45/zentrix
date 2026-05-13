@@ -35,18 +35,9 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         <div className={`container ${styles.inner}`}>
-          <a href="#" className={styles.logo} aria-label="Zentrix home">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
-              <path d="M9 22V10l7 12 7-12v12" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-              <defs>
-                <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
-                  <stop stopColor="#3b82f6" />
-                  <stop offset="1" stopColor="#6366f1" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span className={styles.logoText}>Zentrix</span>
+          <a href="#" className={styles.logo} aria-label="InfiniDev home">
+            <img src="/logo-main.png" alt="InfiniDev" width="56" height="56" style={{ borderRadius: 6 }} />
+            <span className={styles.logoText}>InfiniDev</span>
           </a>
 
           <ul className={styles.links} role="menubar">
